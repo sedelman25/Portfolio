@@ -32,9 +32,15 @@
           x.style.height = "350px";
           x.style.width = "350px";
       }
+      function noPadding(x) {
+        x.style.padding = "0px";
+      }
+      function Padding(x) {
+        x.style.padding = "7px"
+      }
     </script>
 
-    <div class="container">
+    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
       <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
         About Me
       </div>
