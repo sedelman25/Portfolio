@@ -7,7 +7,7 @@
     }
     .container {
       float: left;
-      padding: 5px;
+      padding: 7px;
     }
     .circle {
       width: 350px;
@@ -22,8 +22,20 @@
     </style>
 
   <body style=background-color:mistyrose;>
+
+    <script>
+      function bigImg(x) {
+          x.style.height = "364px";
+          x.style.width = "364px";
+      }
+      function normalImg(x) {
+          x.style.height = "350px";
+          x.style.width = "350px";
+      }
+    </script>
+
     <div class="container">
-      <div class="circle">
+      <div class="circle" onmouseover="bigCircle(this)" onmouseout="smallCircle(this)">
         About Me
       </div>
     </div>
