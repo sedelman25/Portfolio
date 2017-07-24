@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Sophie Edelman</title>
+  </head>
   <style>
     body {
       font-family: times;
@@ -7,11 +10,12 @@
     }
     .container {
       float: left;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 5px;
+      position: relative;
     }
+    a { text-decoration: none; color:mistyrose; }
+    a:visited { text-decoration: none; }
+    a:active { text-decoration: none; }
     .circle {
       width: 350px;
       height: 350px;
@@ -21,6 +25,33 @@
       line-height: 350px;
       text-align: center;
       background: navy;
+    }
+    img {
+      border-radius: 50%;
+    }
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+    }
+    .container:hover .image {
+      opacity: 0.3;
+    }
+    .container:hover .middle {
+      opacity: 1;
     }
     </style>
 
@@ -36,77 +67,74 @@
           x.style.width = "350px";
       }
       function noPadding(x) {
-        x.style.padding.left = "0px";
-        x.style.padding.right = "0px";
-        x.style.padding.top = "5px";
-        x.style.padding.bottom = "5px";
+        x.style.padding = "0px";
       }
       function Padding(x) {
-        x.style.padding.left = "5px";
-        x.style.padding.right = "5px";
-        x.style.padding.top = "10px";
-        x.style.padding.bottom = "10px";
+        x.style.padding = "5px";
       }
     </script>
 
     <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
       <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        About Me
+        <a href="aboutme.html" style="text-decoration: none">About Me</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="circle">
+        <img src="flower.png" alt="flower" style="width:150px" align="middle">
       </div>
     </div>
     <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
       <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
+        Projects
       </div>
     </div>
-    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
-      <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
+    <div class="container">
+      <div class="circle">
+
       </div>
     </div>
-    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
-      <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
-      </div>
-    </div>
-    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
-      <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
-      </div>
-    </div>
-    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
-      <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
-      </div>
-    </div>
-    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
-      <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        <img src="thisisme.jpg" alt="Me" style="width:200px;height:200px">
+    <div class="container">
+      <div class="circle">
+
       </div>
     </div>
     <div class="container"onmouseover="noPadding(this)" onmouseout="Padding(this)">
       <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
+        Sophie Edelman
+      </div>
+    </div>
+    <div class="container">
+      <div class="circle">
+        <img src="thisisme.jpg" alt="Me" class="image" style="width:350px; height:350px">
+        <div class="middle">
+          <div class="text">Welcome</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="circle">
+
       </div>
     </div>
     <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
       <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
+        Resume
+      </div>
+    </div>
+    <div class="container">
+      <div class="circle">
+
       </div>
     </div>
     <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
       <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
+        Contact
       </div>
     </div>
-    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
-      <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
-      </div>
-    </div>
-    <div class="container" onmouseover="noPadding(this)" onmouseout="Padding(this)">
-      <div class="circle" onmouseover="bigCircle(this)" onmouseout="normalCircle(this)">
-        Hello
+    <div class="container">
+      <div class="circle">
+
       </div>
     </div>
 
